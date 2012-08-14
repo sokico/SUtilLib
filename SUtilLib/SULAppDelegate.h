@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface SULAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+{
+    UITabBarController*      mTabBarController;
+}
+@property (strong, nonatomic) IBOutlet UIWindow *window;
+@property (nonatomic, retain) IBOutlet UITabBarController*    tabBarController;
 
 @end

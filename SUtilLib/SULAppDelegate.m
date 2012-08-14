@@ -2,6 +2,7 @@
 //  SULAppDelegate.m
 //  SUtilLib
 //
+//  Abstract: Application delegate that sets up a tab bar controller with two view controllers
 //  Created by Sohel Dadia on 6/30/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
@@ -15,6 +16,8 @@
 - (void)dealloc
 {
     [_window release];
+    [mTabBarController release];
+    
     [super dealloc];
 }
 
@@ -23,6 +26,7 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    [self.window addSubview:mTabBarController.view];
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -53,5 +57,8 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+@synthesize tabBarController = mTabBarController;
+
 
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D43D6D815DA20BA008A347A /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D43D6D715DA20BA008A347A /* MainWindow.xib */; };
 		7DD16A08159F7AF600E93426 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD16A07159F7AF600E93426 /* UIKit.framework */; };
 		7DD16A0A159F7AF600E93426 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD16A09159F7AF600E93426 /* Foundation.framework */; };
 		7DD16A0C159F7AF600E93426 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD16A0B159F7AF600E93426 /* CoreGraphics.framework */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D43D6D715DA20BA008A347A /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		7DD16A03159F7AF600E93426 /* SUtilLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SUtilLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DD16A07159F7AF600E93426 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7DD16A09159F7AF600E93426 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -73,8 +75,10 @@
 		7DD16A0D159F7AF600E93426 /* SUtilLib */ = {
 			isa = PBXGroup;
 			children = (
+				7DEBEFD715A9E17C00CDAFE7 /* Logging */,
 				7DD16A16159F7AF600E93426 /* SULAppDelegate.h */,
 				7DD16A17159F7AF600E93426 /* SULAppDelegate.m */,
+				7D43D6D715DA20BA008A347A /* MainWindow.xib */,
 				7DD16A0E159F7AF600E93426 /* Supporting Files */,
 			);
 			path = SUtilLib;
@@ -89,6 +93,13 @@
 				7DD16A15159F7AF600E93426 /* SUtilLib-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7DEBEFD715A9E17C00CDAFE7 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Logging;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DD16A12159F7AF600E93426 /* InfoPlist.strings in Resources */,
+				7D43D6D815DA20BA008A347A /* MainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +270,7 @@
 				7DD16A1D159F7AF600E93426 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
